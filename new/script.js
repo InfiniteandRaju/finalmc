@@ -129,4 +129,34 @@ document.addEventListener('DOMContentLoaded', function() {
             joinDiscord();
         });
     });
+
+});
+
+// Add this function to your existing script.js file
+
+// Purchase coins function
+function purchaseCoins(coins, price) {
+    if (confirm(`Purchase ${coins} coins for ₹${price}?\n\nYou will be redirected to our Discord server to complete the purchase.`)) {
+        joinDiscord();
+        
+        // Optional: Show a message about the purchase process
+        setTimeout(() => {
+            alert(`To complete your purchase of ${coins} coins:\n\n1. Create a ticket in our Discord server\n2. Specify you want to buy ${coins} coins\n3. Our staff will assist you with payment\n4. Coins will be delivered instantly!`);
+        }, 1000);
+    }
+}
+
+// Also update the navigation to include coins store
+document.addEventListener('DOMContentLoaded', function() {
+    // Add smooth scrolling for coins store link
+    document.querySelectorAll('nav a[href="#coins-store"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetElement = document.querySelector('#coins-store');
+            window.scrollTo({
+                top: targetElement.offsetTop - 100,
+                behavior: 'smooth'
+            });
+        });
+    });
 });
