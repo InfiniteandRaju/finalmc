@@ -939,4 +939,204 @@ section {
     .purchase-instructions ol {
         padding-left: 20px;
     }
+
+}
+/* Add this to your existing CSS file */
+
+/* Coins Store Section */
+.coins-store {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.coins-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+.coin-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.coin-card.popular {
+    transform: scale(1.05);
+    border-color: var(--mc-gold);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+}
+
+.coin-card.ultimate {
+    transform: scale(1.05);
+    border-color: var(--mc-diamond);
+    box-shadow: 0 0 30px rgba(79, 195, 247, 0.3);
+}
+
+.coin-header {
+    margin-bottom: 20px;
+}
+
+.coin-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, var(--mc-gold), #ffed4e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.coin-card.popular .coin-icon {
+    background: linear-gradient(45deg, var(--mc-gold), #ffd700);
+}
+
+.coin-card.ultimate .coin-icon {
+    background: linear-gradient(45deg, var(--mc-diamond), #4fc3f7);
+}
+
+.coin-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, var(--mc-gold), var(--mc-saffron));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.coin-badge {
+    background: rgba(255, 215, 0, 0.2);
+    color: var(--mc-gold);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.coin-price {
+    margin-bottom: 20px;
+}
+
+.coin-price .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--mc-gold);
+    display: block;
+}
+
+.coin-price .price-per-coin {
+    font-size: 0.9rem;
+    color: #888;
+    display: block;
+}
+
+.coin-features {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.coin-features p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #cccccc;
+}
+
+.coin-features i {
+    color: var(--mc-india-green);
+    min-width: 16px;
+}
+
+.coin-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(45deg, var(--mc-gold), #ffed4e);
+    color: #333;
+}
+
+.coin-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.coin-card.popular .coin-button {
+    background: linear-gradient(45deg, var(--mc-gold), #ffd700);
+}
+
+.coin-card.ultimate .coin-button {
+    background: linear-gradient(45deg, var(--mc-diamond), #4fc3f7);
+    color: #fff;
+}
+
+.coins-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-card h3 {
+    color: var(--mc-gold);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-card p {
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.info-card ul {
+    color: #cccccc;
+    padding-left: 20px;
+}
+
+.info-card li {
+    margin-bottom: 8px;
+}
+
+/* Responsive adjustments for coins section */
+@media (max-width: 768px) {
+    .coins-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .coin-card.popular,
+    .coin-card.ultimate {
+        transform: none;
+    }
+    
+    .coins-info {
+        grid-template-columns: 1fr;
+    }
 }
