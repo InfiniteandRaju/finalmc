@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinalMC - Premium Minecraft Server</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-text">FinalMC</div>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#ranks">Ranks</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="cta-button" onclick="joinDiscord()">
+                    <i class="fab fa-discord"></i> Join Discord
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-island"></div>
+            <div class="floating-cube"></div>
+            <div class="floating-diamond"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-gradient">FinalMC</span>
+                    <span class="title-sub">PREMIUM MINECRAFT SERVER</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Join India's fastest growing Minecraft community! Experience survival like never before 
+                    with custom features, economy system, and an amazing community of players.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="joinServer()">
+                        <i class="fas fa-play"></i> Join Server Now
+                    </button>
+                    <button class="btn-secondary" onclick="copyIP()">
+                        <i class="fas fa-copy"></i> IP: play.finalmc.fun
+                    </button>
+                    <button class="btn-discord" onclick="joinDiscord()">
+                        <i class="fab fa-discord"></i> Join Discord
+                    </button>
+                </div>
+                
+                <!-- Server Status -->
+                <div class="server-status">
+                    <div class="status-item">
+                        <div class="status-indicator online"></div>
+                        <span>Server Online</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-users"></i>
+                        <span>84/150 Players</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-code-branch"></i>
+                        <span>Version 1.20.1</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-rupee-sign"></i>
+                        <span>Indian Server</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>SERVER FEATURES</h2>
+                <p>Everything you need for the ultimate Minecraft experience</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>High Performance</h3>
+                    <p>99.9% uptime with optimized Indian servers for lag-free gameplay</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Anti-Cheat Protection</h3>
+                    <p>Advanced systems to keep gameplay fair and cheat-free for everyone</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Active Community</h3>
+                    <p>Friendly Indian players and dedicated staff team always ready to help</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Custom Minigames</h3>
+                    <p>Unique games and events you won't find anywhere else</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Economy System</h3>
+                    <p>Trade, build, and create your empire with our robust economy</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Premium Ranks</h3>
+                    <p>Affordable ranks with amazing perks starting at just ₹80</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ranks Section -->
+    <section id="ranks" class="ranks">
+        <div class="container">
+            <div class="section-header">
+                <h2>PREMIUM RANKS</h2>
+                <p>Unlock amazing features and support our Indian server</p>
+                <p class="purchase-info">To purchase ranks, join our Discord and create a ticket!</p>
+            </div>
+            
+            <div class="ranks-grid">
+                <!-- Noble Rank -->
+                <div class="rank-card">
+                    <div class="rank-header">
+                        <div class="rank-icon noble">
+                            <i class="fas fa-hat-cowboy"></i>
+                        </div>
+                        <h3>NOBLE</h3>
+                        <div class="rank-price">
+                            <span class="price">₹80</span>
+                            <span class="price-usd">$1.00</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="rank-features">
+                        <li><i class="fas fa-check"></i> Basic Perks & Starter Kit</li>
+                        <li><i class="fas fa-check"></i> Colorful Nickname</li>
+                        <li><i class="fas fa-check"></i> Extra Homes (3)</li>
+                        <li><i class="fas fa-check"></i> Access to /fly</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                    </ul>
+                    
+                    <button class="rank-button noble-btn" onclick="purchaseRank('Noble')">
+                        <i class="fas fa-crown"></i> Purchase Noble Rank
+                    </button>
+                </div>
+                
+                <!-- Prime Rank -->
+                <div class="rank-card popular">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="rank-header">
+                        <div class="rank-icon prime">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>PRIME</h3>
+                        <div class="rank-price">
+                            <span class="price">₹100</span>
+                            <span class="price-usd">$1.20</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="rank-features">
+                        <li><i class="fas fa-check"></i> Everything in Noble</li>
+                        <li><i class="fas fa-check"></i> Extended Features</li>
+                        <li><i class="fas fa-check"></i> Special Commands</li>
+                        <li><i class="fas fa-check"></i> VIP Chat Access</li>
+                        <li><i class="fas fa-check"></i> Extra Homes (5)</li>
+                    </ul>
+                    
+                    <button class="rank-button prime-btn" onclick="purchaseRank('Prime')">
+                        <i class="fas fa-crown"></i> Purchase Prime Rank
+                    </button>
+                </div>
+                
+                <!-- God Rank -->
+                <div class="rank-card">
+                    <div class="rank-header">
+                        <div class="rank-icon god">
+                            <i class="fas fa-user-god"></i>
+                        </div>
+                        <h3>GOD</h3>
+                        <div class="rank-price">
+                            <span class="price">₹250</span>
+                            <span class="price-usd">$3.00</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="rank-features">
+                        <li><i class="fas fa-check"></i> Everything in Prime</li>
+                        <li><i class="fas fa-check"></i> Premium Access</li>
+                        <li><i class="fas fa-check"></i> Exclusive Items</li>
+                        <li><i class="fas fa-check"></i> VIP Lounge Access</li>
+                        <li><i class="fas fa-check"></i> Extra Homes (8)</li>
+                    </ul>
+                    
+                    <button class="rank-button god-btn" onclick="purchaseRank('God')">
+                        <i class="fas fa-crown"></i> Purchase God Rank
+                    </button>
+                </div>
+                
+                <!-- Deadlist Rank -->
+                <div class="rank-card">
+                    <div class="rank-header">
+                        <div class="rank-icon deadlist">
+                            <i class="fas fa-skull"></i>
+                        </div>
+                        <h3>DEADLIST</h3>
+                        <div class="rank-price">
+                            <span class="price">₹350</span>
+                            <span class="price-usd">$4.20</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="rank-features">
+                        <li><i class="fas fa-check"></i> Everything in God</li>
+                        <li><i class="fas fa-check"></i> Deadlist Exclusive Items</li>
+                        <li><i class="fas fa-check"></i> Special Particle Effects</li>
+                        <li><i class="fas fa-check"></i> Custom Join Message</li>
+                        <li><i class="fas fa-check"></i> Extra Homes (12)</li>
+                    </ul>
+                    
+                    <button class="rank-button deadlist-btn" onclick="purchaseRank('Deadlist')">
+                        <i class="fas fa-crown"></i> Purchase Deadlist Rank
+                    </button>
+                </div>
+                
+                <!-- Legend Rank -->
+                <div class="rank-card ultimate">
+                    <div class="popular-badge">ULTIMATE</div>
+                    <div class="rank-header">
+                        <div class="rank-icon legend">
+                            <i class="fas fa-dragon"></i>
+                        </div>
+                        <h3>LEGEND</h3>
+                        <div class="rank-price">
+                            <span class="price">₹500</span>
+                            <span class="price-usd">$6.00</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="rank-features">
+                        <li><i class="fas fa-check"></i> Everything in Deadlist</li>
+                        <li><i class="fas fa-check"></i> Legend Exclusive Items</li>
+                        <li><i class="fas fa-check"></i> Custom Particle Trail</li>
+                        <li><i class="fas fa-check"></i> Legend Tag & Prefix</li>
+                        <li><i class="fas fa-check"></i> Unlimited Homes</li>
+                    </ul>
+                    
+                    <button class="rank-button legend-btn" onclick="purchaseRank('Legend')">
+                        <i class="fas fa-crown"></i> Purchase Legend Rank
+                    </button>
+                </div>
+            </div>
+            
+            <div class="purchase-instructions">
+                <h3>How to Purchase Ranks:</h3>
+                <ol>
+                    <li>Join our Discord server using the button below</li>
+                    <li>Go to the #create-ticket channel</li>
+                    <li>Create a ticket for rank purchase</li>
+                    <li>Our staff will assist you with the payment process</li>
+                </ol>
+                <button class="discord-cta" onclick="joinDiscord()">
+                    <i class="fab fa-discord"></i> Join Discord to Purchase Ranks
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>SERVER GALLERY</h2>
+                <p>See what our Indian community has built</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image spawn"></div>
+                    <div class="gallery-info">
+                        <h3>Modern Spawn</h3>
+                        <p>Beautiful Indian-themed spawn built by our community</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image castle"></div>
+                    <div class="gallery-info">
+                        <h3>Medieval Castle</h3>
+                        <p>Massive castle with detailed Indian architecture</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image city"></div>
+                    <div class="gallery-info">
+                        <h3>Modern City</h3>
+                        <p>Skyscrapers and urban landscape inspired by Indian cities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="support">
+        <div class="container">
+            <div class="section-header">
+                <h2>SUPPORT & HELP</h2>
+                <p>Need assistance? We're here to help you!</p>
+            </div>
+            
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Discord Support</h3>
+                    <p>Get instant help from our support team on Discord</p>
+                    <div class="support-steps">
+                        <p><strong>Quick Steps:</strong></p>
+                        <ol>
+                            <li>Join our Discord server</li>
+                            <li>Go to #create-ticket channel</li>
+                            <li>Create a support ticket</li>
+                            <li>Our staff will assist you</li>
+                        </ol>
+                    </div>
+                    <button class="support-btn" onclick="joinDiscord()">
+                        <i class="fab fa-discord"></i> Join Discord for Support
+                    </button>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Support</h3>
+                    <p>Prefer email? Contact us directly</p>
+                    <div class="support-email">
+                        <p><strong>Email Address:</strong></p>
+                        <p class="email-address" onclick="copyEmail()">support@finalmc.fun</p>
+                        <p class="email-note">Click to copy email address</p>
+                    </div>
+                    <button class="support-btn" onclick="openEmail()">
+                        <i class="fas fa-envelope"></i> Contact via Email
+                    </button>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Ticket System</h3>
+                    <p>For rank purchases and technical issues</p>
+                    <div class="support-info">
+                        <p><strong>For following issues:</strong></p>
+                        <ul>
+                            <li>Rank Purchases</li>
+                            <li>Technical Problems</li>
+                            <li>Account Issues</li>
+                            <li>Report Players</li>
+                        </ul>
+                    </div>
+                    <button class="support-btn" onclick="joinDiscord()">
+                        <i class="fas fa-ticket-alt"></i> Create Ticket on Discord
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-text">FinalMC</div>
+                    </div>
+                    <p>The ultimate Indian Minecraft survival experience with custom features and an amazing community.</p>
+                    <div class="server-ip">
+                        <strong>Server IP:</strong> play.finalmc.fun
+                    </div>
+                    <div class="discord-link">
+                        <strong>Discord:</strong> 
+                        <a href="https://discord.gg/Qr4Ve9hZAd" target="_blank">discord.gg/Qr4Ve9hZAd</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#ranks">Ranks</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Server Info</h4>
+                    <ul>
+                        <li>IP: play.finalmc.fun</li>
+                        <li>Version: 1.20.1</li>
+                        <li>Status: Online</li>
+                        <li>Players: 84/150</li>
+                        <li>Location: India</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="https://discord.gg/Qr4Ve9hZAd" target="_blank">Discord Server</a></li>
+                        <li><a href="mailto:support@finalmc.fun">Email Support</a></li>
+                        <li><a href="https://discord.gg/Qr4Ve9hZAd" target="_blank">Create Ticket</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 FinalMC. All rights reserved. Not affiliated with Mojang or Microsoft.</p>
+                <p>Made with ❤️ for Indian Minecraft Community</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
